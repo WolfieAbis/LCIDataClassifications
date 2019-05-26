@@ -6,7 +6,7 @@ using LCIData;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-
+using System.Text.RegularExpressions;
 namespace LCIBusinessLayer
 {
     public class LCIBusiness:ILCIBusiness
@@ -26,11 +26,11 @@ namespace LCIBusinessLayer
 
                 List<LciSubcategory> objSubCategory = RepoWrapper.SubCategory.FindAll();
 
-                int categoryId = GetCategoryId(tweet.Tweettext, objCategory);
-                
-                if(categoryId ==0)
-                 categoryId = GetSubCategoryId(tweet.Tweettext, objSubCategory);
+                int categoryId = GetCategoryId(tweet.Tweettext, objCategory, objSubCategory);
 
+                //if(categoryId ==0)
+                // categoryId = GetSubCategoryId(tweet.Tweettext, objSubCategory);
+                tweet.Categoryid = categoryId;
                 RepoWrapper.Tweet.Create(tweet);
                 RepoWrapper.save();
             }
@@ -41,18 +41,33 @@ namespace LCIBusinessLayer
         }
 
 
-        private int GetCategoryId(string tweetTxt, List<LciCategory> Categories)
+        private int GetCategoryId(string tweetTxt, List<LciCategory> Categories,List<LciSubcategory> subcategories)
         {
             int CatId = 0;
-            tweetTxt = tweetTxt.Replace("#", "");
+             
 
             try
             {
-                var objMatchingCategory = (from objCategory in Categories
-                                           where objCategory.Categoryname.ToLower().Contains(tweetTxt.ToLower())
-                                           select objCategory.Categoryid).FirstOrDefault();
+                var regex = new Regex(@"(?<=#)\w+");
+                var matches = regex.Matches(tweetTxt);
 
-                CatId = objMatchingCategory;
+                foreach (Match m in matches)
+                {
+                    var objMatchingCategory = (from objCategory in Categories
+                                               where m.Value.ToLower().Contains(objCategory.Categoryname.ToLower())
+                                               select objCategory.Categoryid).FirstOrDefault();
+                    string s1=m.Value.ToLower();
+                    
+                    CatId = objMatchingCategory;
+                    if (CatId == 0)
+                    {
+                        CatId = GetSubCategoryId(m.Value, subcategories);
+                    }
+                    // adds the tweet count part here
+                }
+
+               
+            
 
                 return CatId;
             }
@@ -63,20 +78,24 @@ namespace LCIBusinessLayer
         }
 
 
-        private int GetSubCategoryId(string tweetTxt, List<LciSubcategory> SubCategories)
+        private int GetSubCategoryId(string tweetTxt,List<LciSubcategory> SubCategories)
         {
-            int SubCatId = 0;
-            tweetTxt = tweetTxt.Replace("#", "");
+            
 
             try
             {
+                int SubCatId = 0;  
                 var objMatchingSubCategory = (from objSubCategory in SubCategories
-                                              where objSubCategory.Subcategoryname.ToLower().Contains(tweetTxt.ToLower())
+                                              where tweetTxt.ToLower().Contains(objSubCategory.Subcategoryname.ToLower())
                                            select objSubCategory.Categoryid).FirstOrDefault();
 
               
-                    SubCatId = objMatchingSubCategory;
-
+                   SubCatId = Convert.ToInt32(objMatchingSubCategory);
+                if(SubCatId==0)
+                {
+                    SubCatId = 1;
+                    //if the # value doesn't comes under category and subcategory it will fall under others category 
+                }
                 return SubCatId;
             }
             catch (Exception ex)

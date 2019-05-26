@@ -13,11 +13,11 @@ namespace LCIEntities.Models
         [Column("tweettext")]
         [StringLength(255)]
         public string Tweettext { get; set; }
-        [Column("subcategoryid")]
-        public int? Subcategoryid { get; set; }
+        [Column("categoryid")]
+        public int? Categoryid { get; set; }
 
-        [ForeignKey("Subcategoryid")]
+        [ForeignKey("Categoryid")]
         [InverseProperty("LciTweets")]
-        public virtual LciSubcategory Subcategory { get; set; }
+        public virtual LciCategory Category { get; set; }
     }
 }

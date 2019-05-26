@@ -12,6 +12,7 @@ namespace LCIEntities.Models
         {
             LciSubcategory = new HashSet<LciSubcategory>();
             LciTweetCount = new HashSet<LciTweetCount>();
+            LciTweets = new HashSet<LciTweets>();
         }
 
         [Column("categoryid")]
@@ -24,5 +25,7 @@ namespace LCIEntities.Models
         public virtual ICollection<LciSubcategory> LciSubcategory { get; set; }
         [InverseProperty("Category")]
         public virtual ICollection<LciTweetCount> LciTweetCount { get; set; }
+        [InverseProperty("Category")]
+        public virtual ICollection<LciTweets> LciTweets { get; set; }
     }
 }
