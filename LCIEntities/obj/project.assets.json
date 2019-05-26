@@ -3679,11 +3679,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Abinesh\\Hackathon\\DataClassification\\LCIEntities\\LCIEntities.csproj",
+      "projectUniqueName": "C:\\Abinesh\\backup\\DataClassification\\LCIEntities\\LCIEntities.csproj",
       "projectName": "LCIEntities",
-      "projectPath": "C:\\Abinesh\\Hackathon\\DataClassification\\LCIEntities\\LCIEntities.csproj",
+      "projectPath": "C:\\Abinesh\\backup\\DataClassification\\LCIEntities\\LCIEntities.csproj",
       "packagesPath": "C:\\Users\\m1036116\\.nuget\\packages\\",
-      "outputPath": "C:\\Abinesh\\Hackathon\\DataClassification\\LCIEntities\\obj\\",
+      "outputPath": "C:\\Abinesh\\backup\\DataClassification\\LCIEntities\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

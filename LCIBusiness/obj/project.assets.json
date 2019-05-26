@@ -3569,11 +3569,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Abinesh\\Hackathon\\DataClassification\\LCIBusiness\\LCIBusiness.csproj",
+      "projectUniqueName": "C:\\Abinesh\\backup\\DataClassification\\LCIBusiness\\LCIBusiness.csproj",
       "projectName": "LCIBusiness",
-      "projectPath": "C:\\Abinesh\\Hackathon\\DataClassification\\LCIBusiness\\LCIBusiness.csproj",
+      "projectPath": "C:\\Abinesh\\backup\\DataClassification\\LCIBusiness\\LCIBusiness.csproj",
       "packagesPath": "C:\\Users\\m1036116\\.nuget\\packages\\",
-      "outputPath": "C:\\Abinesh\\Hackathon\\DataClassification\\LCIBusiness\\obj\\",
+      "outputPath": "C:\\Abinesh\\backup\\DataClassification\\LCIBusiness\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -3593,11 +3593,11 @@
       "frameworks": {
         "netcoreapp2.2": {
           "projectReferences": {
-            "C:\\Abinesh\\Hackathon\\DataClassification\\LCIData\\LCIData.csproj": {
-              "projectPath": "C:\\Abinesh\\Hackathon\\DataClassification\\LCIData\\LCIData.csproj"
+            "C:\\Abinesh\\backup\\DataClassification\\LCIData\\LCIData.csproj": {
+              "projectPath": "C:\\Abinesh\\backup\\DataClassification\\LCIData\\LCIData.csproj"
             },
-            "C:\\Abinesh\\Hackathon\\DataClassification\\LCIEntities\\LCIEntities.csproj": {
-              "projectPath": "C:\\Abinesh\\Hackathon\\DataClassification\\LCIEntities\\LCIEntities.csproj"
+            "C:\\Abinesh\\backup\\DataClassification\\LCIEntities\\LCIEntities.csproj": {
+              "projectPath": "C:\\Abinesh\\backup\\DataClassification\\LCIEntities\\LCIEntities.csproj"
             }
           }
         }

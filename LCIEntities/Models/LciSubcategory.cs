@@ -19,7 +19,7 @@ namespace LCIEntities.Models
         [StringLength(255)]
         public string Subcategoryname { get; set; }
         [Column("categoryid")]
-        public int? Categoryid { get; set; }
+        public int Categoryid { get; set; }
 
         [ForeignKey("Categoryid")]
         [InverseProperty("LciSubcategory")]

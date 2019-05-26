@@ -7,6 +7,8 @@ namespace LCIData.Interface
     public interface IRepositoryWrapper
     {
         ITweetRepository Tweet { get; }
+        ICategoryRepository Category { get; }
+        ISubCategoryRepository SubCategory { get; }
 
         void save();
     }

@@ -8,11 +8,7 @@ namespace LCIClassification
     public partial class LciTweetsModel
     {
       
-        public int Tweetid { get; set; }
-      
         public string Tweettext { get; set; }
-      
-        public int Subcategoryid { get; set; }
 
       
     }

@@ -7,7 +7,7 @@ namespace LCIData.Interface
 {
     public interface IRepositoryBase<TEntity>
     {
-        IEnumerable<TEntity> FindAll();
+        List<TEntity> FindAll();
         IEnumerable<TEntity> FindByCondition(Expression<Func<TEntity, bool>> expression);
         void Create(TEntity entity);
         void Update(TEntity entity);

@@ -19,9 +19,9 @@ namespace LCIData.Repositories
 
         }
 
-        public IEnumerable<TEntity> FindAll()
+        public List<TEntity> FindAll()
         {
-            return this.RepositoryContext.Set<TEntity>();
+            return this.RepositoryContext.Set<TEntity>().ToList();
         }
 
         public IEnumerable<TEntity> FindByCondition(Expression<Func<TEntity, bool>> expression)
