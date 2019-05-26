@@ -3550,11 +3550,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Abinesh\\backup\\DataClassification\\LCIData\\LCIData.csproj",
+      "projectUniqueName": "C:\\Abinesh\\LCI DataClassification - Chennai Hackathon\\DataClassification\\LCIData\\LCIData.csproj",
       "projectName": "LCIData",
-      "projectPath": "C:\\Abinesh\\backup\\DataClassification\\LCIData\\LCIData.csproj",
+      "projectPath": "C:\\Abinesh\\LCI DataClassification - Chennai Hackathon\\DataClassification\\LCIData\\LCIData.csproj",
       "packagesPath": "C:\\Users\\m1036116\\.nuget\\packages\\",
-      "outputPath": "C:\\Abinesh\\backup\\DataClassification\\LCIData\\obj\\",
+      "outputPath": "C:\\Abinesh\\LCI DataClassification - Chennai Hackathon\\DataClassification\\LCIData\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -3574,8 +3574,8 @@
       "frameworks": {
         "netcoreapp2.2": {
           "projectReferences": {
-            "C:\\Abinesh\\backup\\DataClassification\\LCIEntities\\LCIEntities.csproj": {
-              "projectPath": "C:\\Abinesh\\backup\\DataClassification\\LCIEntities\\LCIEntities.csproj"
+            "C:\\Abinesh\\LCI DataClassification - Chennai Hackathon\\DataClassification\\LCIEntities\\LCIEntities.csproj": {
+              "projectPath": "C:\\Abinesh\\LCI DataClassification - Chennai Hackathon\\DataClassification\\LCIEntities\\LCIEntities.csproj"
             }
           }
         }

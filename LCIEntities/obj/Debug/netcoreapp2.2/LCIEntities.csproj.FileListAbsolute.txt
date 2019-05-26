@@ -18,3 +18,13 @@ C:\Abinesh\backup\DataClassification\LCIEntities\obj\Debug\netcoreapp2.2\LCIEnti
 C:\Abinesh\backup\DataClassification\LCIEntities\obj\Debug\netcoreapp2.2\LCIEntities.AssemblyInfo.cs
 C:\Abinesh\backup\DataClassification\LCIEntities\obj\Debug\netcoreapp2.2\LCIEntities.dll
 C:\Abinesh\backup\DataClassification\LCIEntities\obj\Debug\netcoreapp2.2\LCIEntities.pdb
+C:\Abinesh\LCI DataClassification - Chennai Hackathon\DataClassification\LCIEntities\bin\Debug\netcoreapp2.2\LCIEntities.deps.json
+C:\Abinesh\LCI DataClassification - Chennai Hackathon\DataClassification\LCIEntities\bin\Debug\netcoreapp2.2\LCIEntities.runtimeconfig.json
+C:\Abinesh\LCI DataClassification - Chennai Hackathon\DataClassification\LCIEntities\bin\Debug\netcoreapp2.2\LCIEntities.runtimeconfig.dev.json
+C:\Abinesh\LCI DataClassification - Chennai Hackathon\DataClassification\LCIEntities\bin\Debug\netcoreapp2.2\LCIEntities.dll
+C:\Abinesh\LCI DataClassification - Chennai Hackathon\DataClassification\LCIEntities\bin\Debug\netcoreapp2.2\LCIEntities.pdb
+C:\Abinesh\LCI DataClassification - Chennai Hackathon\DataClassification\LCIEntities\obj\Debug\netcoreapp2.2\LCIEntities.csproj.CoreCompileInputs.cache
+C:\Abinesh\LCI DataClassification - Chennai Hackathon\DataClassification\LCIEntities\obj\Debug\netcoreapp2.2\LCIEntities.AssemblyInfoInputs.cache
+C:\Abinesh\LCI DataClassification - Chennai Hackathon\DataClassification\LCIEntities\obj\Debug\netcoreapp2.2\LCIEntities.AssemblyInfo.cs
+C:\Abinesh\LCI DataClassification - Chennai Hackathon\DataClassification\LCIEntities\obj\Debug\netcoreapp2.2\LCIEntities.dll
+C:\Abinesh\LCI DataClassification - Chennai Hackathon\DataClassification\LCIEntities\obj\Debug\netcoreapp2.2\LCIEntities.pdb

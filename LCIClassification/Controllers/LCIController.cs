@@ -49,6 +49,19 @@ namespace LCIClassification.Controllers
             }
         }
 
+        [HttpGet]
+        [Route("LCI/TweetCount")]
+        public int GetCategoryCountById(int categoryId)
+        {
+            try
+            {
+                return businessLayer.GetCategoryCountById(categoryId);
+            }
+            catch (Exception ex)
+            {
 
+                return -1;
+            }
+        }
     }
 }

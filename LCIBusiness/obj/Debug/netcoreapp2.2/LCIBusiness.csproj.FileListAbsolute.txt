@@ -26,3 +26,17 @@ C:\Abinesh\backup\DataClassification\LCIBusiness\obj\Debug\netcoreapp2.2\LCIBusi
 C:\Abinesh\backup\DataClassification\LCIBusiness\obj\Debug\netcoreapp2.2\LCIBusiness.csproj.CopyComplete
 C:\Abinesh\backup\DataClassification\LCIBusiness\obj\Debug\netcoreapp2.2\LCIBusiness.dll
 C:\Abinesh\backup\DataClassification\LCIBusiness\obj\Debug\netcoreapp2.2\LCIBusiness.pdb
+C:\Abinesh\LCI DataClassification - Chennai Hackathon\DataClassification\LCIBusiness\bin\Debug\netcoreapp2.2\LCIBusiness.deps.json
+C:\Abinesh\LCI DataClassification - Chennai Hackathon\DataClassification\LCIBusiness\bin\Debug\netcoreapp2.2\LCIBusiness.dll
+C:\Abinesh\LCI DataClassification - Chennai Hackathon\DataClassification\LCIBusiness\bin\Debug\netcoreapp2.2\LCIBusiness.pdb
+C:\Abinesh\LCI DataClassification - Chennai Hackathon\DataClassification\LCIBusiness\bin\Debug\netcoreapp2.2\LCIData.dll
+C:\Abinesh\LCI DataClassification - Chennai Hackathon\DataClassification\LCIBusiness\bin\Debug\netcoreapp2.2\LCIEntities.dll
+C:\Abinesh\LCI DataClassification - Chennai Hackathon\DataClassification\LCIBusiness\bin\Debug\netcoreapp2.2\LCIData.pdb
+C:\Abinesh\LCI DataClassification - Chennai Hackathon\DataClassification\LCIBusiness\bin\Debug\netcoreapp2.2\LCIEntities.pdb
+C:\Abinesh\LCI DataClassification - Chennai Hackathon\DataClassification\LCIBusiness\obj\Debug\netcoreapp2.2\LCIBusiness.csprojAssemblyReference.cache
+C:\Abinesh\LCI DataClassification - Chennai Hackathon\DataClassification\LCIBusiness\obj\Debug\netcoreapp2.2\LCIBusiness.csproj.CoreCompileInputs.cache
+C:\Abinesh\LCI DataClassification - Chennai Hackathon\DataClassification\LCIBusiness\obj\Debug\netcoreapp2.2\LCIBusiness.AssemblyInfoInputs.cache
+C:\Abinesh\LCI DataClassification - Chennai Hackathon\DataClassification\LCIBusiness\obj\Debug\netcoreapp2.2\LCIBusiness.AssemblyInfo.cs
+C:\Abinesh\LCI DataClassification - Chennai Hackathon\DataClassification\LCIBusiness\obj\Debug\netcoreapp2.2\LCIBusiness.csproj.CopyComplete
+C:\Abinesh\LCI DataClassification - Chennai Hackathon\DataClassification\LCIBusiness\obj\Debug\netcoreapp2.2\LCIBusiness.dll
+C:\Abinesh\LCI DataClassification - Chennai Hackathon\DataClassification\LCIBusiness\obj\Debug\netcoreapp2.2\LCIBusiness.pdb

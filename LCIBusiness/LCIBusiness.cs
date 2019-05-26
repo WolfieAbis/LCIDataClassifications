@@ -17,7 +17,25 @@ namespace LCIBusinessLayer
             this.RepoWrapper = repoWrapper;
         }
 
-
+        public int GetCategoryCountById(int categoryID)
+        {
+            try
+            {
+                List<LciTweetCount> objCount = RepoWrapper.TweetCounts.FindAll();
+                var count = (from category in objCount
+                             where category.Categoryid == categoryID
+                             select category.Tweetcounts).FirstOrDefault();
+                if (count != null)
+                    return Convert.ToInt32(count);
+                else
+                    return 0;
+            }
+            catch
+            {
+                throw;
+                
+            }
+        }
         public void createTweet(LciTweets tweet)
         {
             try
