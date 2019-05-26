@@ -10,6 +10,7 @@ namespace LCIData.Interface
         ICategoryRepository Category { get; }
         ISubCategoryRepository SubCategory { get; }
 
+        ITweetCountRepository TweetCounts { get; }
         void save();
     }
 }

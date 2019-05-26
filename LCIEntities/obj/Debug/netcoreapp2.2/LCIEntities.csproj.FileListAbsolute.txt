@@ -8,14 +8,13 @@ C:\Abinesh\Hackathon\DataClassification\LCIEntities\bin\Debug\netcoreapp2.2\LCIE
 C:\Abinesh\Hackathon\DataClassification\LCIEntities\bin\Debug\netcoreapp2.2\LCIEntities.pdb
 C:\Abinesh\Hackathon\DataClassification\LCIEntities\obj\Debug\netcoreapp2.2\LCIEntities.dll
 C:\Abinesh\Hackathon\DataClassification\LCIEntities\obj\Debug\netcoreapp2.2\LCIEntities.pdb
-C:\Abinesh\backup\DataClassification\LCIEntities\obj\Debug\netcoreapp2.2\LCIEntities.csproj.CoreCompileInputs.cache
-C:\Abinesh\backup\DataClassification\LCIEntities\obj\Debug\netcoreapp2.2\LCIEntities.AssemblyInfoInputs.cache
-C:\Abinesh\backup\DataClassification\LCIEntities\obj\Debug\netcoreapp2.2\LCIEntities.AssemblyInfo.cs
 C:\Abinesh\backup\DataClassification\LCIEntities\bin\Debug\netcoreapp2.2\LCIEntities.deps.json
 C:\Abinesh\backup\DataClassification\LCIEntities\bin\Debug\netcoreapp2.2\LCIEntities.runtimeconfig.json
 C:\Abinesh\backup\DataClassification\LCIEntities\bin\Debug\netcoreapp2.2\LCIEntities.runtimeconfig.dev.json
 C:\Abinesh\backup\DataClassification\LCIEntities\bin\Debug\netcoreapp2.2\LCIEntities.dll
 C:\Abinesh\backup\DataClassification\LCIEntities\bin\Debug\netcoreapp2.2\LCIEntities.pdb
+C:\Abinesh\backup\DataClassification\LCIEntities\obj\Debug\netcoreapp2.2\LCIEntities.csproj.CoreCompileInputs.cache
+C:\Abinesh\backup\DataClassification\LCIEntities\obj\Debug\netcoreapp2.2\LCIEntities.AssemblyInfoInputs.cache
+C:\Abinesh\backup\DataClassification\LCIEntities\obj\Debug\netcoreapp2.2\LCIEntities.AssemblyInfo.cs
 C:\Abinesh\backup\DataClassification\LCIEntities\obj\Debug\netcoreapp2.2\LCIEntities.dll
 C:\Abinesh\backup\DataClassification\LCIEntities\obj\Debug\netcoreapp2.2\LCIEntities.pdb
-C:\Abinesh\backup\DataClassification\LCIEntities\obj\Debug\netcoreapp2.2\LCIEntities.csprojAssemblyReference.cache

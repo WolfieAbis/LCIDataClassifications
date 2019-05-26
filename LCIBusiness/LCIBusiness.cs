@@ -9,14 +9,14 @@ using System.Text;
 using System.Text.RegularExpressions;
 namespace LCIBusinessLayer
 {
-    public class LCIBusiness:ILCIBusiness
+    public class LCIBusiness : ILCIBusiness
     {
         private IRepositoryWrapper RepoWrapper;
         public LCIBusiness(IRepositoryWrapper repoWrapper)
         {
             this.RepoWrapper = repoWrapper;
         }
-               
+
 
         public void createTweet(LciTweets tweet)
         {
@@ -40,11 +40,41 @@ namespace LCIBusinessLayer
             }
         }
 
+        public void TweetCount(int categoryid)
+            {
+            try
+            {
+                List<LciTweetCount> objCountCategory = RepoWrapper.TweetCounts.FindAll();
+                LciTweetCount lcitweetcount = (from objcount in objCountCategory
+                                    where objcount.Categoryid == categoryid
+                                    select objcount).FirstOrDefault();
+                if (lcitweetcount != null)
+                {
+                    
+                    lcitweetcount.Tweetcounts = lcitweetcount.Tweetcounts + 1;
+                    RepoWrapper.TweetCounts.Update(lcitweetcount);
+                }
+                else
+                { 
+                    LciTweetCount objNewTweet = new LciTweetCount();
+                    objNewTweet.Categoryid = categoryid;
+                    objNewTweet.Tweetcounts = 1;
+                    RepoWrapper.TweetCounts.Create(objNewTweet);
+                }
 
-        private int GetCategoryId(string tweetTxt, List<LciCategory> Categories,List<LciSubcategory> subcategories)
+                RepoWrapper.save();
+
+            }
+            catch(Exception e)
+            {
+            throw;
+            }
+            }
+
+    private int GetCategoryId(string tweetTxt, List<LciCategory> Categories, List<LciSubcategory> subcategories)
         {
             int CatId = 0;
-             
+
 
             try
             {
@@ -56,27 +86,30 @@ namespace LCIBusinessLayer
                     var objMatchingCategory = (from objCategory in Categories
                                                where m.Value.ToLower().Contains(objCategory.Categoryname.ToLower())
                                                select objCategory.Categoryid).FirstOrDefault();
-                    string s1=m.Value.ToLower();
-                    
+                   
+
                     CatId = objMatchingCategory;
                     if (CatId == 0)
                     {
                         CatId = GetSubCategoryId(m.Value, subcategories);
                     }
                     // adds the tweet count part here
+                    TweetCount(CatId);
+
                 }
 
-               
-            
+
+
 
                 return CatId;
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 throw ex;
             }
         }
 
+       
 
         private int GetSubCategoryId(string tweetTxt,List<LciSubcategory> SubCategories)
         {

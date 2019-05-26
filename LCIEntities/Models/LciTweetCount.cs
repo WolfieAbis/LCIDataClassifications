@@ -12,6 +12,8 @@ namespace LCIEntities.Models
         public int Tweetcountid { get; set; }
         [Column("categoryid")]
         public int? Categoryid { get; set; }
+        [Column("tweetcounts")]
+        public int? Tweetcounts { get; set; }
 
         [ForeignKey("Categoryid")]
         [InverseProperty("LciTweetCount")]

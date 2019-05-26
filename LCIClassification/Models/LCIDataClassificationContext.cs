@@ -61,12 +61,12 @@ namespace LCIClassification.Models
             modelBuilder.Entity<LciTweetCount>(entity =>
             {
                 entity.HasKey(e => e.Tweetcountid)
-                    .HasName("PK__LCI_Twee__CB25B294B1B6C812");
+                    .HasName("PK__LCI_Twee__CB25B29498DB5218");
 
                 entity.HasOne(d => d.Category)
                     .WithMany(p => p.LciTweetCount)
                     .HasForeignKey(d => d.Categoryid)
-                    .HasConstraintName("FK__LCI_Tweet__categ__36B12243");
+                    .HasConstraintName("FK__LCI_Tweet__categ__49C3F6B7");
             });
 
             modelBuilder.Entity<LciTweets>(entity =>

@@ -54,9 +54,9 @@ namespace LCIClassification
 
         private void RegisterServices(IServiceCollection services)
         {
-            //var connection = Configuration.GetConnectionString("LocalConnection");
+            var connection = Configuration.GetConnectionString("LocalConnection");
 
-            //services.AddDbContext<LCIDataClassificationContext>(options => options.UseSqlServer(connection));
+            services.AddDbContext<LCIDataClassificationContext>(options => options.UseSqlServer(connection));
 
             services.AddScoped<ILCIBusiness, LCIBusiness>();
             services.AddScoped<IRepositoryWrapper, RepositoryWrapper>();
