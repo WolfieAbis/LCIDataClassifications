@@ -1,0 +1,45 @@
+
+
+CREATE TABLE LCI_Category(categoryid INT NOT NULL PRIMARY KEY,categoryname VARCHAR(255))
+
+CREATE TABLE LCI_Subcategory(subcategoryid INT NOT NULL PRIMARY KEY,subcategoryname VARCHAR(255),categoryid INT FOREIGN KEY REFERENCES LCI_Category(categoryid))
+
+CREATE TABLE LCI_Tweets(tweetid INT NOT NULL IDENTITY(1,1) PRIMARY KEY ,tweettext VARCHAR(255),categoryid INT FOREIGN KEY REFERENCES LCI_Category(categoryid))
+
+CREATE TABLE LCI_TweetCount(tweetcountid INT NOT NULL IDENTITY(1,1) PRIMARY KEY,categoryid INT FOREIGN KEY REFERENCES LCI_Category(categoryid),tweetcounts int)
+insert into [dbo].[LCI_Category] values(1,'others ');
+insert into [dbo].[LCI_Category] values(5,'Environment');
+insert into [dbo].[LCI_Category] values(2,'Fund');
+insert into [dbo].[LCI_Category] values(3,'Health ');
+insert into [dbo].[LCI_Category] values(4,'Community ');
+
+
+insert into  [dbo].[LCI_Subcategory] values (1,'others',1)
+insert into  [dbo].[LCI_Subcategory] values (5,'Plant',5)
+insert into  [dbo].[LCI_Subcategory] values (2,'Water',5)
+insert into  [dbo].[LCI_Subcategory] values (3,'Earth',5)
+insert into  [dbo].[LCI_Subcategory] values (4,'Trees',5)
+
+
+insert into  [dbo].[LCI_Subcategory] values (6,'Money',2)
+insert into  [dbo].[LCI_Subcategory] values (7,'Donation',2)
+insert into  [dbo].[LCI_Subcategory] values (8,'Amount',2)
+insert into  [dbo].[LCI_Subcategory] values (9,'cash',2)
+insert into  [dbo].[LCI_Subcategory] values (10,'Dollar',2)
+
+
+insert into  [dbo].[LCI_Subcategory] values (11,'Diabetes',3)
+insert into  [dbo].[LCI_Subcategory] values (12,'Fitness',3)
+insert into  [dbo].[LCI_Subcategory] values (13,'wellness',3)
+insert into  [dbo].[LCI_Subcategory] values (14,'marathon',3)
+insert into  [dbo].[LCI_Subcategory] values (15,'Disease',3)
+
+
+insert into  [dbo].[LCI_Subcategory] values (16,'clubs',4)
+insert into  [dbo].[LCI_Subcategory] values (17,'organisation',4)
+insert into  [dbo].[LCI_Subcategory] values (18,'officers',4)
+insert into  [dbo].[LCI_Subcategory] values (19,'District',4)
+insert into  [dbo].[LCI_Subcategory] values (20,'International',4)
+insert into  [dbo].[LCI_Subcategory] values (21,'Region',4)
+
+
